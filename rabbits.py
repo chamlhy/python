@@ -18,9 +18,7 @@ def feb1(n):
     if n < 1:
         print('input error!')
         return -1
-    if n == 1:
-        return 1
-    if n == 2:
+    if n == 1 or n == 2:
         return 1
     if n > 2:
         return feb1(n-1)+feb1(n-2)
