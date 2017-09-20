@@ -33,7 +33,12 @@ def getExternalLinks(bsObj, excludeUrl):
     return externalLinks
 
 def splitAddress(address):
-    addressParts = re.split('https*\:\/\/', address)[1].split('/')
+    addressParts = re.split('https*\:\/\/', address)
+    if len(addressParts) >=2:
+        addressParts = addressParts[1]
+    else:
+        addressParts = addressParts[0]
+    addressParts = addressParts.split('/')[0]
     return addressParts
 
 #随机获取一个外链列表中的链接
