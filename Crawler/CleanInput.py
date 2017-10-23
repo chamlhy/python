@@ -33,8 +33,8 @@ if __name__ == '__main__':
     print('2-grams count is : ' + str(len(ngrams)))
     print(ngrams[:20])
     #这里的ngrams应该是记录了频率的字典类型
-    #ngrams = OrderedDict(sorted(ngrams.items, key = lambda t: t[1], reverse = True))
+    #ngrams = OrderedDict(sorted(ngrams.items(), key = lambda t: t[1], reverse = True))
     #print('ordered count is :' + str(len(ngrams)))
-    #print(ngrams)
+    #print(ngrams[:20])
         
     
